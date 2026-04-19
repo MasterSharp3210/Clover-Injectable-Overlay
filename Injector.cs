@@ -35,8 +35,9 @@ namespace CloverInjector
 
         static void Main(string[] args)
         {
+            string exePath = AppDomain.CurrentDomain.BaseDirectory;
             string dllName = "CloverDLL.dll";
-            string dllPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dllName);
+            string dllPath = Path.Combine(exePath, dllName);
 
             if (!File.Exists(dllPath))
             {

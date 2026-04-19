@@ -1,13 +1,14 @@
-# Clover Minecraft Mod
-Questa è in assoluto la mia prima mod di Minecraft per aggiungere un mantello personale
+# Clover Injectable Overlay 
+This is a (Clover-Minecraft-Client)[https://github.com/MasterSharp3210/Clover-Minecraft-Client] Add-In. This is my first Injectable Program i ever created. **Only for Windows**
 
-# Problemi
-Già il fatto che io sia riuscito dopo 4 ore a compilare il .jar usando `gradlew` è un miracolo, data la bruttezza di questo metodo per compilare mod su uno dei giochi più famosi al mondo. Inoltre vorrei aggiungere che stavo utilizzando una versione più vecchia di Minecraft più precisamente `Minecraft 1.8.9 Forge-fml 1.8.9 Java SDK 8`.
-Dopo svariate ore di lavoro, avevo concluso i file e deciso che era il momento di testare la mod ed inizialmente sembra addirittura partire. (Per me era un grande obbiettivo dato il fatto che era la prima mod che facevo). Prima d'ora non avevo mai avuto problemi ad imbattermi con Java ma avevo sempre fatto applicazioni desktop che compilavo con Maven. Dopo l'aiuto di vari AI che continuavano a dirmi che il metodo da me fatto era quello corretto e nativo per questa cosa, ho deciso di trarre le *conclusioni...*
+# Soome Informations
+Supported OS: **Windows**
+Target hProc: **javaw.exe**
+Target huint: **Minecraft 1.8.9 Forge**
+Languages: **C# - Java - C++ - C**
 
-# Conclusioni & Consigli
-Ho deciso per ora di chiudere questo capitolo in quanto ho verificato più volte cambiando più impostazioni che la mod non va. Se qualcuno ha la necessità di chiedere o vuole prendersi la briga di sistemare questa mod, è ben accetto. Aprite un nuovo form nella sezione Issues di GitHub per favore.
-Infine una cosa che vorrei aggiungere è che non mi sono mai trovato così male a compilare dei file per uno dei linguaggi di programmazione più famosi al mondo. Io mi lamentavo dei problemi relativi al debugging e building dei programmi in C e C++ che tutt'ora contesto per l'impropriatezza dei termini e dei compilatori (ma qualcuno può compilare uno dei più grandi sistemi operativi come Windows da un compilatore a casissimo chiamato *mingw* e scaricato da source forge...) ma con Java andiamo oltre l'immaginazione umana proprio. Neanche a dire che esiste un installer per Gradle. No... ognuno ha il proprio script caduto dal cielo che ti permette in non si sa quale strana magia di compilare il file .jar che viene anche storto. Questo mi ha distrutto molto vedendo quante mod per Minecraft esistono sul mercato attuale e quanto pensavo sarebbe stato facile creare una mod solo per sostituire un mantello.
+# The DLL Injectable Program
+This program is made like a ghost client and it's written in C# (Injector), C/C++ (The DLL), Java (The Mod). Only the C++ part of this program in made by AI. The rest is coded by me...
 
-# La fine
-Dopo il commento *Che Dio ci aiuti* fatto in precedenza, e dopo tanti scleri sono riuscito a fixare la mod. **Ora funziona** per tanto se volete utilizzarla, andate nel vostro .minecraft e create una cartella chiamata .clovercape. Qui dentro inserirete il vostro cape in formato di nome *cape.png*. Al caricamento della mod, inietterà il vostro mantello dalla cartella appena citata. **ATTENZIONE: RICHIEDE FORGE 1.8.9 & NON FUNZIONA CON OPTIFINE!**
+# I hope you enjoy
+This is a Developer Sperimental Program which uses DLL Process Modifications. Only expert devs can rate this. If you want to download this file you have the full responsibility of your actions. Enjoy!

@@ -17,6 +17,13 @@ Languages:
 
 **C** (Kernel + WinAPI)
 
+IDEs:
+**Visual Studio**
+
+**Visual Studio Code**
+
+**IntelliJ Idea**
+
 # Explanation
 The Heart of the Client is written in Java likes a normal mod with a special `public static void Inject()` which specify the injection progress loading other internal classes using `private static void StartClient()`. After this, the mod classes will run as normal mod parts. The important block is written in C and C++. This **D**ynamic**L**ink**L**ibrary, use WinAPI and Kernel32 to decompress the .jar mod and introduce these into Minecraft (*javaw.exe*)...
 The Injector written in C#, load the .dll as a module and Forge Loader accept the mod class with some -jvmArgs like JNI/JNA.

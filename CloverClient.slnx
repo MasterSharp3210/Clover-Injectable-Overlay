@@ -1,0 +1,7 @@
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="CloverClient.vcxproj" Id="12a82b05-f609-4697-a549-303df0af534b" />
+</Solution>

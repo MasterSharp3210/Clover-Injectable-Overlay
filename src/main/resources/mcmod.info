@@ -1,0 +1,16 @@
+[
+{
+  "modid": "cloverclient",
+  "name": "Clover Client",
+  "description": "CloverClient",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Itelcan3"],
+  "credits": "Forge, 85cs, Lightning",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

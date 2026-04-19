@@ -1,0 +1,206 @@
+Symbol range map extraction starting
+Processing 4 files
+processing com\itelcan3\cloverclient\Main.java
+@|com\itelcan3\cloverclient\Main.java|8|33|com.itelcan3.cloverclient|package|com.itelcan3.cloverclient|(file)
+Class Start: com.itelcan3.cloverclient.Main
+   Method Start: inject()V
+      @|com\itelcan3\cloverclient\Main.java|277|283|inject|method|com.itelcan3.cloverclient.Main|inject|()V
+      @|com\itelcan3\cloverclient\Main.java|296|305|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\itelcan3\cloverclient\Main.java|306|318|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\itelcan3\cloverclient\Main.java|321|337|addScheduledTask|method|net.minecraft.util.IThreadListener|addScheduledTask|(Ljava/lang/Runnable;)Lcom/google/common/util/concurrent/ListenableFuture;
+      @|com\itelcan3\cloverclient\Main.java|342|350|Runnable|class|java.lang.Runnable
+      Anon Class Start: com.itelcan3.cloverclient.Main$1
+         Method Start: run()V
+            @|com\itelcan3\cloverclient\Main.java|401|404|run|method|java.lang.Runnable|run|()V
+            @|com\itelcan3\cloverclient\Main.java|425|436|startClient|method|com.itelcan3.cloverclient.Main|startClient|()V
+         Method End: run()V
+      Anon Class End: com.itelcan3.cloverclient.Main$1
+   Method End: inject()V
+   Method Start: startClient()V
+      @|com\itelcan3\cloverclient\Main.java|496|507|startClient|method|com.itelcan3.cloverclient.Main|startClient|()V
+      @|com\itelcan3\cloverclient\Main.java|538|552|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\itelcan3\cloverclient\Main.java|553|562|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\itelcan3\cloverclient\Main.java|563|571|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\itelcan3\cloverclient\Main.java|576|586|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\Main.java|603|617|MinecraftForge|class|net.minecraftforge.common.MinecraftForge
+      @|com\itelcan3\cloverclient\Main.java|618|627|EVENT_BUS|field|net.minecraftforge.common.MinecraftForge|EVENT_BUS
+      @|com\itelcan3\cloverclient\Main.java|628|636|register|method|net.minecraftforge.fml.common.eventhandler.EventBus|register|(Ljava/lang/Object;)V
+      @|com\itelcan3\cloverclient\Main.java|641|655|EscMenuHandler|class|com.itelcan3.cloverclient.client.EscMenuHandler
+      @|com\itelcan3\cloverclient\Main.java|677|686|Exception|class|java.lang.Exception
+      @|com\itelcan3\cloverclient\Main.java|706|721|printStackTrace|method|java.lang.Throwable|printStackTrace|()V
+   Method End: startClient()V
+Class End  : com.itelcan3.cloverclient.Main
+endProcessing com\itelcan3\cloverclient\Main.java
+
+processing com\itelcan3\cloverclient\client\CloverConfigGui.java
+@|com\itelcan3\cloverclient\client\CloverConfigGui.java|8|40|com.itelcan3.cloverclient.client|package|com.itelcan3.cloverclient.client|(file)
+Class Start: com.itelcan3.cloverclient.client.CloverConfigGui
+   @|com\itelcan3\cloverclient\client\CloverConfigGui.java|225|234|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+   @|com\itelcan3\cloverclient\client\CloverConfigGui.java|235|241|parent|field|com.itelcan3.cloverclient.client.CloverConfigGui|parent|
+   Method Start: CloverConfigGui(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|255|270|CloverConfigGui|method|com.itelcan3.cloverclient.client.CloverConfigGui|CloverConfigGui|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|271|280|GuiScreen|class|net.minecraft.client.gui.GuiScreen
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|281|287|parent|param|com.itelcan3.cloverclient.client.CloverConfigGui|CloverConfigGui|(Lnet/minecraft/client/gui/GuiScreen;)V|parent|0
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|304|310|parent|field|com.itelcan3.cloverclient.client.CloverConfigGui|parent
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|313|319|parent|param|com.itelcan3.cloverclient.client.CloverConfigGui|CloverConfigGui|(Lnet/minecraft/client/gui/GuiScreen;)V|parent|0
+   Method End: CloverConfigGui(Lnet/minecraft/client/gui/GuiScreen;)V
+   Method Start: initGui()V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|358|365|initGui|method|net.minecraft.client.gui.GuiScreen|initGui|()V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|383|393|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|394|397|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|402|411|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|420|425|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|442|448|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|484|494|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|495|498|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|503|512|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|521|526|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|543|549|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|591|601|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|602|605|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|610|619|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|628|633|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|650|656|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|700|710|buttonList|field|net.minecraft.client.gui.GuiScreen|buttonList
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|711|714|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|719|728|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|737|742|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|759|765|height|field|net.minecraft.client.gui.GuiScreen|height
+   Method End: initGui()V
+   Method Start: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|831|846|actionPerformed|method|net.minecraft.client.gui.GuiScreen|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|872|883|IOException|class|java.io.IOException
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|847|856|GuiButton|class|net.minecraft.client.gui.GuiButton
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|857|863|button|param|com.itelcan3.cloverclient.client.CloverConfigGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|898|904|button|param|com.itelcan3.cloverclient.client.CloverConfigGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|905|907|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|919|921|mc|field|net.minecraft.client.gui.GuiScreen|mc
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|922|938|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|939|945|parent|field|com.itelcan3.cloverclient.client.CloverConfigGui|parent
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|960|966|button|param|com.itelcan3.cloverclient.client.CloverConfigGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|967|969|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|994|1004|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1005|1010|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1024|1034|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1035|1040|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1074|1084|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1085|1090|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1104|1114|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1115|1120|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1154|1164|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1165|1170|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1184|1194|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1195|1200|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1230|1240|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1241|1246|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1281|1287|button|param|com.itelcan3.cloverclient.client.CloverConfigGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1288|1290|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1299|1309|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1310|1315|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1324|1334|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1335|1340|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1362|1368|button|param|com.itelcan3.cloverclient.client.CloverConfigGui|actionPerformed|(Lnet/minecraft/client/gui/GuiButton;)V|button|0
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1369|1371|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1380|1390|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1391|1396|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1405|1415|HUDOverlay|class|com.itelcan3.cloverclient.client.HUDOverlay
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1416|1421|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+   Method End: actionPerformed(Lnet/minecraft/client/gui/GuiButton;)V
+   Method Start: drawScreen(IIF)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1468|1478|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1483|1489|mouseX|param|com.itelcan3.cloverclient.client.CloverConfigGui|drawScreen|(IIF)V|mouseX|0
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1495|1501|mouseY|param|com.itelcan3.cloverclient.client.CloverConfigGui|drawScreen|(IIF)V|mouseY|1
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1509|1521|partialTicks|param|com.itelcan3.cloverclient.client.CloverConfigGui|drawScreen|(IIF)V|partialTicks|2
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1538|1559|drawDefaultBackground|method|net.minecraft.client.gui.GuiScreen|drawDefaultBackground|()V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1576|1594|drawCenteredString|method|net.minecraft.client.gui.Gui|drawCenteredString|(Lnet/minecraft/client/gui/FontRenderer;Ljava/lang/String;III)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1600|1615|fontRendererObj|field|net.minecraft.client.gui.GuiScreen|fontRendererObj
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1641|1646|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1681|1691|drawScreen|method|net.minecraft.client.gui.GuiScreen|drawScreen|(IIF)V
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1692|1698|mouseX|param|com.itelcan3.cloverclient.client.CloverConfigGui|drawScreen|(IIF)V|mouseX|0
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1700|1706|mouseY|param|com.itelcan3.cloverclient.client.CloverConfigGui|drawScreen|(IIF)V|mouseY|1
+      @|com\itelcan3\cloverclient\client\CloverConfigGui.java|1708|1720|partialTicks|param|com.itelcan3.cloverclient.client.CloverConfigGui|drawScreen|(IIF)V|partialTicks|2
+   Method End: drawScreen(IIF)V
+Class End  : com.itelcan3.cloverclient.client.CloverConfigGui
+endProcessing com\itelcan3\cloverclient\client\CloverConfigGui.java
+
+processing com\itelcan3\cloverclient\client\EscMenuHandler.java
+@|com\itelcan3\cloverclient\client\EscMenuHandler.java|8|40|com.itelcan3.cloverclient.client|package|com.itelcan3.cloverclient.client|(file)
+Class Start: com.itelcan3.cloverclient.client.EscMenuHandler
+   Method Start: onGuiInit(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|361|370|onGuiInit|method|com.itelcan3.cloverclient.client.EscMenuHandler|onGuiInit|(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|371|403|GuiScreenEvent.InitGuiEvent.Post|class|net.minecraftforge.client.event.GuiScreenEvent.InitGuiEvent.Post
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|404|409|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onGuiInit|(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|425|430|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onGuiInit|(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|431|434|gui|field|net.minecraftforge.client.event.GuiScreenEvent|gui
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|446|459|GuiIngameMenu|class|net.minecraft.client.gui.GuiIngameMenu
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|486|491|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onGuiInit|(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|492|495|gui|field|net.minecraftforge.client.event.GuiScreenEvent|gui
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|496|501|width|field|net.minecraft.client.gui.GuiScreen|width
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|532|537|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onGuiInit|(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|538|541|gui|field|net.minecraftforge.client.event.GuiScreenEvent|gui
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|542|548|height|field|net.minecraft.client.gui.GuiScreen|height
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|567|572|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onGuiInit|(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|573|583|buttonList|field|net.minecraftforge.client.event.GuiScreenEvent.InitGuiEvent|buttonList
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|584|587|add|method|java.util.Collection|add|(Ljava/lang/Object;)Z
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|592|601|GuiButton|class|net.minecraft.client.gui.GuiButton
+   Method End: onGuiInit(Lnet/minecraftforge/client/event/GuiScreenEvent$InitGuiEvent$Post;)V
+   Method Start: onActionPerformed(Lnet/minecraftforge/client/event/GuiScreenEvent$ActionPerformedEvent$Post;)V
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|702|719|onActionPerformed|method|com.itelcan3.cloverclient.client.EscMenuHandler|onActionPerformed|(Lnet/minecraftforge/client/event/GuiScreenEvent$ActionPerformedEvent$Post;)V
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|720|760|GuiScreenEvent.ActionPerformedEvent.Post|class|net.minecraftforge.client.event.GuiScreenEvent.ActionPerformedEvent.Post
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|761|766|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onActionPerformed|(Lnet/minecraftforge/client/event/GuiScreenEvent$ActionPerformedEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|782|787|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onActionPerformed|(Lnet/minecraftforge/client/event/GuiScreenEvent$ActionPerformedEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|788|791|gui|field|net.minecraftforge.client.event.GuiScreenEvent|gui
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|803|816|GuiIngameMenu|class|net.minecraft.client.gui.GuiIngameMenu
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|820|825|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onActionPerformed|(Lnet/minecraftforge/client/event/GuiScreenEvent$ActionPerformedEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|826|832|button|field|net.minecraftforge.client.event.GuiScreenEvent.ActionPerformedEvent|button
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|833|835|id|field|net.minecraft.client.gui.GuiButton|id
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|859|868|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|869|881|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|884|900|displayGuiScreen|method|net.minecraft.client.Minecraft|displayGuiScreen|(Lnet/minecraft/client/gui/GuiScreen;)V
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|905|920|CloverConfigGui|class|com.itelcan3.cloverclient.client.CloverConfigGui
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|921|926|event|param|com.itelcan3.cloverclient.client.EscMenuHandler|onActionPerformed|(Lnet/minecraftforge/client/event/GuiScreenEvent$ActionPerformedEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\EscMenuHandler.java|927|930|gui|field|net.minecraftforge.client.event.GuiScreenEvent|gui
+   Method End: onActionPerformed(Lnet/minecraftforge/client/event/GuiScreenEvent$ActionPerformedEvent$Post;)V
+Class End  : com.itelcan3.cloverclient.client.EscMenuHandler
+endProcessing com\itelcan3\cloverclient\client\EscMenuHandler.java
+
+processing com\itelcan3\cloverclient\client\HUDOverlay.java
+@|com\itelcan3\cloverclient\client\HUDOverlay.java|8|40|com.itelcan3.cloverclient.client|package|com.itelcan3.cloverclient.client|(file)
+Class Start: com.itelcan3.cloverclient.client.HUDOverlay
+   @|com\itelcan3\cloverclient\client\HUDOverlay.java|366|373|enabled|field|com.itelcan3.cloverclient.client.HUDOverlay|enabled|
+   @|com\itelcan3\cloverclient\client\HUDOverlay.java|404|405|x|field|com.itelcan3.cloverclient.client.HUDOverlay|x|
+   @|com\itelcan3\cloverclient\client\HUDOverlay.java|433|434|y|field|com.itelcan3.cloverclient.client.HUDOverlay|y|
+   @|com\itelcan3\cloverclient\client\HUDOverlay.java|462|467|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color|
+   @|com\itelcan3\cloverclient\client\HUDOverlay.java|504|509|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale|
+   Method Start: onRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|555|563|onRender|method|com.itelcan3.cloverclient.client.HUDOverlay|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|564|591|RenderGameOverlayEvent.Post|class|net.minecraftforge.client.event.RenderGameOverlayEvent.Post
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|592|597|event|param|com.itelcan3.cloverclient.client.HUDOverlay|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|613|618|event|param|com.itelcan3.cloverclient.client.HUDOverlay|onRender|(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V|event|0
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|619|623|type|field|net.minecraftforge.client.event.RenderGameOverlayEvent|type
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|627|661|RenderGameOverlayEvent.ElementType|class|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|662|665|ALL|field|net.minecraftforge.client.event.RenderGameOverlayEvent.ElementType|ALL
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|669|676|enabled|field|com.itelcan3.cloverclient.client.HUDOverlay|enabled
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|692|701|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|707|716|Minecraft|class|net.minecraft.client.Minecraft
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|717|729|getMinecraft|method|net.minecraft.client.Minecraft|getMinecraft|()Lnet/minecraft/client/Minecraft;
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|745|759|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|760|770|pushMatrix|method|net.minecraft.client.renderer.GlStateManager|pushMatrix|()V
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|786|800|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|801|806|scale|method|net.minecraft.client.renderer.GlStateManager|scale|(FFF)V
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|807|812|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|814|819|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|821|826|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|844|859|fontRendererObj|field|net.minecraft.client.Minecraft|fontRendererObj
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|860|880|drawStringWithShadow|method|net.minecraft.client.gui.FontRenderer|drawStringWithShadow|(Ljava/lang/String;FFI)I
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|903|904|x|field|com.itelcan3.cloverclient.client.HUDOverlay|x
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|907|912|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|914|915|y|field|com.itelcan3.cloverclient.client.HUDOverlay|y
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|918|923|scale|field|com.itelcan3.cloverclient.client.HUDOverlay|scale
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|925|930|color|field|com.itelcan3.cloverclient.client.HUDOverlay|color
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|945|959|GlStateManager|class|net.minecraft.client.renderer.GlStateManager
+      @|com\itelcan3\cloverclient\client\HUDOverlay.java|960|969|popMatrix|method|net.minecraft.client.renderer.GlStateManager|popMatrix|()V
+   Method End: onRender(Lnet/minecraftforge/client/event/RenderGameOverlayEvent$Post;)V
+Class End  : com.itelcan3.cloverclient.client.HUDOverlay
+endProcessing com\itelcan3\cloverclient\client\HUDOverlay.java
+

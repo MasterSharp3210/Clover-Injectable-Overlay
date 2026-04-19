@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Diagnostics;
 using System.IO;
+using System.Linq;
 using System.Runtime.InteropServices;
 using System.Text;
 
@@ -8,7 +9,6 @@ namespace CloverInjector
 {
     class Program
     {
-        // Import WINAPI functions for process manipulation
         [DllImport("kernel32.dll", SetLastError = true)]
         static extern IntPtr OpenProcess(uint dwDesiredAccess, bool bInheritHandle, int dwProcessId);
 
@@ -27,47 +27,40 @@ namespace CloverInjector
         [DllImport("kernel32.dll", SetLastError = true)]
         static extern IntPtr CreateRemoteThread(IntPtr hProcess, IntPtr lpThreadAttributes, uint dwStackSize, IntPtr lpStartAddress, IntPtr lpParameter, uint dwCreationFlags, IntPtr lpThreadId);
 
-
         const uint PROCESS_ALL_ACCESS = 0x001F0FFF;
         const uint MEM_COMMIT = 0x1000;
         const uint MEM_RESERVE = 0x2000;
-        const uint PAGE_READWRITE = 0x04;
+        const uint PAGE_EXECUTE_READWRITE = 0x40;
 
         static void Main(string[] args)
         {
-            string exePath = AppDomain.CurrentDomain.BaseDirectory;
             string dllName = "CloverDLL.dll";
-            string dllPath = Path.Combine(exePath, dllName);
+            string dllPath = Path.Combine(AppDomain.CurrentDomain.BaseDirectory, dllName);
 
             if (!File.Exists(dllPath))
             {
-                Console.WriteLine($"Error: {dllName} not found in the program folder...");
+                Console.WriteLine("Error: " + dllName + " not found.");
                 Console.ReadKey();
                 return;
             }
 
-            Process[] processes = Process.GetProcessesByName("javaw");
-            if (processes.Length == 0)
+            Process targetProcess = Process.GetProcessesByName("javaw").FirstOrDefault();
+            if (targetProcess == null)
             {
                 Console.WriteLine("No Minecraft Found");
                 Console.ReadKey();
                 return;
             }
 
-            Process targetProcess = processes[0];
-            Console.WriteLine($"Minecraft Process Found | PID: {targetProcess.Id}");
-
-
             if (Inject(targetProcess.Id, dllPath))
             {
-                Console.WriteLine("Injection Successful"); Console.ReadKey();
+                Console.WriteLine("Injection Successful");
             }
             else
             {
                 Console.WriteLine("Injection Failed");
             }
 
-            Console.WriteLine("Press any key to exit...");
             Console.ReadKey();
         }
 
@@ -79,11 +72,13 @@ namespace CloverInjector
             IntPtr loadLibraryAddr = GetProcAddress(GetModuleHandle("kernel32.dll"), "LoadLibraryA");
             if (loadLibraryAddr == IntPtr.Zero) return false;
 
+            byte[] pathBytes = Encoding.ASCII.GetBytes(dllPath + "\0");
+            uint pathSize = (uint)pathBytes.Length;
 
-            uint pathSize = (uint)((dllPath.Length + 1) * Marshal.SizeOf(typeof(char)));
-            IntPtr allocMem = VirtualAllocEx(hProcess, IntPtr.Zero, pathSize, MEM_COMMIT | MEM_RESERVE, PAGE_READWRITE);
+            IntPtr allocMem = VirtualAllocEx(hProcess, IntPtr.Zero, pathSize, MEM_COMMIT | MEM_RESERVE, PAGE_EXECUTE_READWRITE);
+            if (allocMem == IntPtr.Zero) return false;
 
-            WriteProcessMemory(hProcess, allocMem, Encoding.Default.GetBytes(dllPath), pathSize, out _);
+            WriteProcessMemory(hProcess, allocMem, pathBytes, pathSize, out _);
 
             IntPtr hThread = CreateRemoteThread(hProcess, IntPtr.Zero, 0, loadLibraryAddr, allocMem, 0, IntPtr.Zero);
 

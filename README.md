@@ -1,10 +1,13 @@
 # Clover Injectable Overlay 
 This is a (Clover-Minecraft-Client)[https://github.com/MasterSharp3210/Clover-Minecraft-Client] Add-In. This is my first Injectable Program i ever created. **Only for Windows**
 
-# Soome Informations
+# Some Informations
 Supported OS: **Windows**
+
 Target hProc: **javaw.exe**
+
 Target huint: **Minecraft 1.8.9 Forge**
+
 Languages: **C# - Java - C++ - C**
 
 # The DLL Injectable Program
